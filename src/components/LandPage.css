@@ -1,29 +1,25 @@
 /* LandingPage.css */
 
-/* div .landing-page {
-  background: rgb(255, 227, 228);
-  background: linear-gradient(157deg, rgba(255, 227, 228, 1) 41%, rgba(255, 255, 255, 1) 100%);
-} */
-
-.landing-page {
-  text-align: center;
+.main-landing-page{
+  background-color: #ffecec;
+  /* background-repeat: no-repeat;
+  background-size: auto; */
+  overflow: hidden;
 }
 
 .landing-page .img img {
   width: 578px;
   height: 557px;
   position: relative;
-  top: 93px;
-  right: 29%;
+  bottom: 711px;
+  left: 22%;
   /* left: 311px; */
   border-radius: 8px;
-  /* Optional: Add some styling */
   animation-delay: 150ms;
   animation-name: Frame20;
   animation-timing-function: ease-out;
   animation-duration: 300ms;
 }
-
 
 .wave-image {
   position: absolute;
@@ -38,9 +34,9 @@
 
 .wave-image img {
   width: 100%;
-  height: 55vh;
+  height: 34vh;
   position: relative;
-  top: 113px;
+  top: 7px;
   left: 0px;
   gap: 0px;
   opacity: 0px;
@@ -59,35 +55,79 @@
 .innate-logo img {
   width: 592px;
   height: 513px;
-  top: -54px;
-  left: 6px;
+  top: -4px;
+  right: 751px;
   gap: 0px;
   opacity: 0px;
   position: relative;
 }
 
-.boygif img {
-  width: 30%;
-  height: 20%;
+/* men img  */
+men-img img{
   position: relative;
-  top: 205px;
-  right: 32%;
-  bottom: 25%;
+  left: 56%;
+  top: 30px;
 }
 
-/* .camera{
-  border: 3px solid red;
-  width: 20%;
-  height: 20px;
-} */
-
-.girlgif img {
-  width: 30%;
-  height: 20%;
+/* toggle btn */
+.switch {
   position: relative;
-  /* top: 151px; */
-  left: 32%;
-  bottom: 300px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-/* birdscss */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
