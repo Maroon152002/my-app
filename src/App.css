@@ -6,6 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+
 }
 
 code {
@@ -50,4 +52,9 @@ code {
   to {
     transform: rotate(360deg);
   }
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
 }

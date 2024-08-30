@@ -1,0 +1,83 @@
+.footer-container {
+  background-color: #ffffff;
+;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: 15vw !important;  */
+  width: 30vw !important;
+  cursor: pointer;
+  transition: height 0.3s ease-in-out;
+  border: #999999;
+  border-radius: 25px 25px 0px 0px;
+  z-index: 4;
+}
+
+.footer-container.expanded {
+  height: 15vw;
+  
+}
+
+.footer-content {
+  padding: 10px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.footer-content p {
+  margin: 0;
+  padding: 5px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.social-icons .MuiIconButton-root {
+  color: #000; /* Adjust color as needed */
+  margin: 0 5px;
+}
+
+.twitter-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2vh;
+}
+
+.footer-link-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  position: relative;
+}
+
+.footer-link-item .MuiIconButton-root {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.footer-link-item:hover .MuiIconButton-root {
+  transform: translateY(-5px) scale(1.1);
+  background-color: #a4a2a2; /* Optional: change background color on hover */
+}
+
+
+
+@media (max-width: 600px) {
+  .footer-container {
+    width: 100vw !important;
+  }
+}
