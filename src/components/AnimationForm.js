@@ -186,15 +186,15 @@ export const AnimationForm = () => {
       </Grid>
 
       {/* Camera Icon */}
-      {/* <Grid item sm={4} display={{xs: 'none', sm: 'flex'}} >
-        <CameraWrapper onClick={handleCameraClick}>
+      <Grid item sm={4} display={{xs: 'none', sm: 'flex'}} >
+        {/* <CameraWrapper onClick={handleCameraClick}>
           <CameraIcon className="cameraIcon" />
-        </CameraWrapper>
+        </CameraWrapper> */}
         <div>
-          <ClickMeButton>RETAKE</ClickMeButton>
-          <ClickMeButton>SUBMIT</ClickMeButton>
+          {/* <ClickMeButton>RETAKE</ClickMeButton>
+          <ClickMeButton>SUBMIT</ClickMeButton> */}
         </div>
-      </Grid> */}
+      </Grid>
 
       {/* Animation 2 with Click Me Button */}
       <Grid

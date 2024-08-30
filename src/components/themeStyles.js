@@ -60,6 +60,8 @@ export const ClickMeButton = styled(Button)(({ theme }) => ({
   textTransform: "none",
   justifySelf: "center",
   width: "40%",
+  zIndex: 5,
+  transform: 'translateX(50%)',
   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
   marginTop: "20px",
   alignSelf: "center",

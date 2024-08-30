@@ -16,7 +16,7 @@
 }
 
 .footer-container.expanded {
-  height: 15vw;
+  height: 200px;
   
 }
 
@@ -76,6 +76,11 @@
 
 
 
+@media (max-width: 900px) {
+  .footer-container {
+    width: 50vw !important;
+  }
+}
 @media (max-width: 600px) {
   .footer-container {
     width: 100vw !important;
