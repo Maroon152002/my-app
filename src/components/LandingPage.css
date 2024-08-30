@@ -1,0 +1,144 @@
+/* LandingPage.css */
+
+.main-landing-page {
+    background-color: #ffecec;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cube-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cube {
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    border: solid 1px rgba(139, 0, 0, 0.8);
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+}
+
+.cube:nth-child(2n) {
+    border-color: rgba(255, 0, 0, 0.6);
+}
+
+.cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25%;
+    top: 40%;
+}
+
+.cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75%;
+    top: 50%;
+}
+
+.cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90%;
+    top: 10%;
+}
+
+.cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10%;
+    top: 85%;
+}
+
+.cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 50%;
+    top: 10%;
+}
+
+.wave-container {
+  position: fixed;
+  bottom: -0vh;
+  width: 100%;
+}
+
+.wave-image {
+  width: 100%;
+  height: auto;
+}
+
+.logo-container {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-60%);
+  z-index: 1;
+  width: auto;
+  max-width: 100%; 
+}
+
+.logo-image {
+  width: 100%;
+  height: auto;
+}
+
+.people-container {
+    position: absolute;
+    right: 5%;
+    /* top: 30%; */
+    transform: translateY(-20%);
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: -5vw; /* Adjust gap between images */
+    z-index: 2; /* Ensure it's above other elements */
+}
+
+.man-image {
+    width: 30vw; /* Initial size */
+    height: auto;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.woman-image {
+    width: 12vw; /* Initial size */
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+.woman2-image {
+    width: 20vw; /* Same as woman-image */
+    height: auto;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.5s ease;
+}
+
+.scrolled .man-image {
+    width: 20vw; /* Size when scrolled */
+}
+
+.scrolled .woman-image {
+    opacity: 0;
+}
+
+.scrolled .woman2-image {
+    opacity: 1;
+}
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
